@@ -7,6 +7,7 @@ import Method from './components/Method';
 import Testimonials from './components/Testimonials';
 import Courses from './components/Courses';
 import FAQ from './components/FAQ';
+import GuidePreview from './components/GuidePreview';
 import Footer from './components/Footer';
 import UserDashboard from './components/UserDashboard';
 
@@ -47,6 +48,7 @@ export default function App() {
       <Testimonials />
       <Courses />
       <FAQ />
+      <GuidePreview />
       <Footer />
     </div>
   );
