@@ -4,20 +4,18 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Pricing from './components/Pricing';
 import Method from './components/Method';
-import Testimonials from './components/Testimonials';
-import Courses from './components/Courses';
-import FAQ from './components/FAQ';
 import GuidePreview from './components/GuidePreview';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
+import Courses from './components/Courses';
 import Footer from './components/Footer';
 import UserDashboard from './components/UserDashboard';
 
 export default function App() {
-  // Stato per simulare se l'utente ha fatto il login o meno
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userSubscriptionType, setUserSubscriptionType] = useState('lifetime'); // 'lifetime', 'annual', 'single'
+  const [userSubscriptionType, setUserSubscriptionType] = useState('lifetime');
 
   const handleOpenLogin = () => {
-    // Per ora simuliamo l'accesso diretto alla Dashboard con un pass Lifetime
     setIsLoggedIn(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -27,7 +25,6 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Se l'utente è loggato, mostra la sua Area Riservata (Dashboard)
   if (isLoggedIn) {
     return (
       <div className="min-h-screen bg-slate-950 font-sans selection:bg-indigo-500 selection:text-white">
@@ -38,17 +35,16 @@ export default function App() {
     );
   }
 
-  // Altrimenti mostra la Landing Page di vendita persuasiva
   return (
     <div className="min-h-screen bg-slate-950 font-sans selection:bg-indigo-500 selection:text-white">
       <Navbar onOpenLogin={handleOpenLogin} isLoggedIn={isLoggedIn} />
       <Hero />
       <Pricing />
       <Method />
-      <Testimonials />
-      <Courses />
-      <FAQ />
       <GuidePreview />
+      <Testimonials />
+      <FAQ />
+      <Courses />
       <Footer />
     </div>
   );
