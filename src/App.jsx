@@ -3,9 +3,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Pricing from './components/Pricing';
-import Courses from './components/Courses';
 import Method from './components/Method';
 import Testimonials from './components/Testimonials';
+import Courses from './components/Courses';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -18,9 +18,9 @@ export default function App() {
       <Navbar onOpenLogin={handleOpenLogin} />
       <Hero />
       <Pricing />
-      <Courses />
       <Method />
       <Testimonials />
+      <Courses /> {/* I corsi singoli messi più in basso come approfondimento */}
       <Footer />
     </div>
   );
