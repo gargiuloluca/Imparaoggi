@@ -6,6 +6,7 @@ import Pricing from './components/Pricing';
 import Method from './components/Method';
 import Testimonials from './components/Testimonials';
 import Courses from './components/Courses';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import UserDashboard from './components/UserDashboard';
 
@@ -45,6 +46,7 @@ export default function App() {
       <Method />
       <Testimonials />
       <Courses />
+      <FAQ />
       <Footer />
     </div>
   );
