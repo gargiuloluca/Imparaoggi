@@ -1,24 +1,24 @@
 // src/components/Method.jsx
 import React from 'react';
-import { UserCheck, BookOpenCheck, Trophy, ArrowRight } from 'lucide-react';
+import { UserCheck, BookOpenCheck, Trophy, Sparkles } from 'lucide-react';
 
 const steps = [
   {
     number: '01',
-    title: 'Scegli il Percorso',
-    description: 'Accedi all’intera libreria di corsi o seleziona l’area specifica che desideri approfondire: dalla sicurezza alla cucina, fino ai laboratori per bambini.',
+    title: 'Scegli il Tuo Percorso',
+    description: 'Accedi all’area riservata tramite le tue credenziali e seleziona la guida pratica che desideri consultare.',
     icon: UserCheck,
   },
   {
     number: '02',
-    title: 'Segui le Lezioni Pratiche',
-    description: 'Video in alta definizione guidati da esperti del settore, pensati per essere chiari, immediati e applicabili fin dal primo giorno.',
+    title: 'Segui le Guide Illustrate',
+    description: 'Contenuti chiari e dettagliati, arricchiti con immagini esplicative create ad hoc per mostrarti ogni singolo passaggio in modo semplice.',
     icon: BookOpenCheck,
   },
   {
     number: '03',
-    title: 'Ottieni Risultati Concreti',
-    description: 'Metti in pratica le competenze acquisite, migliora le tue abilità quotidiane e vivi un’esperienza di crescita personale e familiare di alto livello.',
+    title: 'Metti in Pratica & Cresci',
+    description: 'Applica subito le competenze acquisite grazie a istruzioni immediate, pensate per darti risultati concreti fin dal primo giorno.',
     icon: Trophy,
   },
 ];
@@ -35,13 +35,13 @@ export default function Method() {
         {/* Intestazione Sezione */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <span className="text-indigo-400 font-semibold text-sm uppercase tracking-widest bg-indigo-950/80 border border-indigo-500/30 px-4 py-1.5 rounded-full inline-block">
-            Semplice & Efficace
+            Semplice & Immediato
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
             Come Funziona l'Accademia
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Un metodo di apprendimento pensato per chi ha poco tempo ma pretende la massima qualità e concretezza.
+            Guide pratiche illustrate passo-passo, progettate per darti il massimo risultato senza perdite di tempo.
           </p>
         </div>
 
